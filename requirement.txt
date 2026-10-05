@@ -1,0 +1,4 @@
+python-telegram-bot==21.6
+instagrapi==2.1.2
+requests==2.32.3
+faker==30.3.0
