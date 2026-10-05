@@ -306,7 +306,6 @@ async def cmd_create(update, ctx):
 
 
 def main():
-    def main():
     if not TELEGRAM_BOT_TOKEN or TELEGRAM_BOT_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN":
         print("[!] TELEGRAM_BOT_TOKEN set kar.")
         sys.exit(1)
@@ -327,7 +326,6 @@ def main():
 
     log.info("[K] bot online. Prime Hacker ka wait kar raha hoon...")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
-
 
 if __name__ == "__main__":
     main()
