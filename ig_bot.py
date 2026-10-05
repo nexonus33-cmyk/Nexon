@@ -24,9 +24,9 @@ from instagrapi.exceptions import (
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TELEGRAM_BOT_TOKEN = os.getenv("8636780493:AAEPJG4IyDVrF3DFu_J6qkUzQt-Ra-RtEqU", "YOUR_TELEGRAM_BOT_TOKEN")
-AUTHORIZED_ID = int(os.getenv("AUTHORIZED_ID", "7422190601"))
-SMS_API_KEY = os.getenv("SMS_API_KEY", "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjI3NjEzNDMsImlhdCI6MTc5MTIyNTM0MywicmF5IjoiMjEyNjY4MTA4ZjVlODg1YjRlMTdhOTBhY2UxZmI4ZTEiLCJzdWIiOjQ1OTkyNTF9.ShicqXqkMKHfXQ6my4ocDDv3J5rvBRl-2VC9hZ7Klr9U5ZUJApeuavFnhW-XR9a5MgfrNK_fUhnvC8jK9-mzdNHXcyYLlZ4SM76iVXdV4oWVysKuwHjcnh_iC0NAAxMr32CaAJTedAUT3USvtWeqB7tecmao_hpamF8_z5UvXfOrjJIVY-egPpbVWM2jYqgU-EAN7qVnN9_IXpalK8PltbzBxeZvKt98LGDicZuRawajWKHicekUA8oxlUEsSYLxN3mCoTZaiJNrXUBfwA-Wxl6F8GyRmHr8oTERzXGNs_X1Y2TLl3RWVB7Vj6-gskJrHShaV-xWBOI6xaDE8pdVvA")
+TELEGRAM_BOT_TOKEN = "8636780493:AAEPJG4IyDVrF3DFu_J6qkUzQt-Ra-RtEqU"        # apna token
+AUTHORIZED_ID      = 7422190601                  # apna ID
+SMS_API_KEY        = eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjI3NjEzNDMsImlhdCI6MTc5MTIyNTM0MywicmF5IjoiMjEyNjY4MTA4ZjVlODg1YjRlMTdhOTBhY2UxZmI4ZTEiLCJzdWIiOjQ1OTkyNTF9.ShicqXqkMKHfXQ6my4ocDDv3J5rvBRl-2VC9hZ7Klr9U5ZUJApeuavFnhW-XR9a5MgfrNK_fUhnvC8jK9-mzdNHXcyYLlZ4SM76iVXdV4oWVysKuwHjcnh_iC0NAAxMr32CaAJTedAUT3USvtWeqB7tecmao_hpamF8_z5UvXfOrjJIVY-egPpbVWM2jYqgU-EAN7qVnN9_IXpalK8PltbzBxeZvKt98LGDicZuRawajWKHicekUA8oxlUEsSYLxN3mCoTZaiJNrXUBfwA-Wxl6F8GyRmHr8oTERzXGNs_X1Y2TLl3RWVB7Vj6-gskJrHShaV-xWBOI6xaDE8pdVvA""             # apni 5sim key)
 ACCOUNTS_FILE = "accounts.txt"
 MAX_PER_BATCH = 20
 DELAY_BETWEEN = 8
