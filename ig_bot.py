@@ -306,13 +306,14 @@ async def cmd_create(update, ctx):
 
 
 def main():
-    if TELEGRAM_BOT_TOKEN.startswith("8636780493:AAEPJG4IyDVrF3DFu_J6qkUzQt-Ra-RtEqU"):
+    def main():
+    if not TELEGRAM_BOT_TOKEN or TELEGRAM_BOT_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN":
         print("[!] TELEGRAM_BOT_TOKEN set kar.")
         sys.exit(1)
-    if SMS_API_KEY.startswith("eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjI3NjEzNDMsImlhdCI6MTc5MTIyNTM0MywicmF5IjoiMjEyNjY4MTA4ZjVlODg1YjRlMTdhOTBhY2UxZmI4ZTEiLCJzdWIiOjQ1OTkyNTF9.ShicqXqkMKHfXQ6my4ocDDv3J5rvBRl-2VC9hZ7Klr9U5ZUJApeuavFnhW-XR9a5MgfrNK_fUhnvC8jK9-mzdNHXcyYLlZ4SM76iVXdV4oWVysKuwHjcnh_iC0NAAxMr32CaAJTedAUT3USvtWeqB7tecmao_hpamF8_z5UvXfOrjJIVY-egPpbVWM2jYqgU-EAN7qVnN9_IXpalK8PltbzBxeZvKt98LGDicZuRawajWKHicekUA8oxlUEsSYLxN3mCoTZaiJNrXUBfwA-Wxl6F8GyRmHr8oTERzXGNs_X1Y2TLl3RWVB7Vj6-gskJrHShaV-xWBOI6xaDE8pdVvA"):
+    if not SMS_API_KEY or SMS_API_KEY == "YOUR_5SIM_API_KEY":
         print("[!] SMS_API_KEY set kar.")
         sys.exit(1)
-    if AUTHORIZED_ID == 7422190601:
+    if AUTHORIZED_ID == 123456789:
         print("[!] AUTHORIZED_ID set kar.")
         sys.exit(1)
 
