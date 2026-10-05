@@ -4,7 +4,7 @@
 Instagram Auto Creator via instagrapi + Telegram Bot
 Chrome nahi chahiye. Railway pe direct chalega.
 
-Env vars (Railway → Variables tab mein daal):
+Env vars (Railway -> Variables tab mein daal):
     TELEGRAM_BOT_TOKEN
     AUTHORIZED_ID
     SMS_API_KEY
@@ -318,6 +318,17 @@ def main():
     ensure_accounts_file()
 
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
+    app.add_handler(CommandHandler("start", cmd_start))
+    app.add_handler(CommandHandler("ping", cmd_ping))
+    app.add_handler(CommandHandler("create", cmd_create))
+    app.add_handler(CommandHandler("accounts", cmd_accounts))
+
+    log.info("[K] bot online. Prime Hacker ka wait kar raha hoon...")
+    app.run_polling(allowed_updates=Update.ALL_TYPES)
+
+
+if __name__ == "__main__":
+    main()AM_BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", cmd_start))
     app.add_handler(CommandHandler("ping", cmd_ping))
     app.add_handler(CommandHandler("create", cmd_create))
