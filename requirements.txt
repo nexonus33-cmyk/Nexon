@@ -1,5 +1,7 @@
 python-telegram-bot==21.6
 instagrapi>=2.2.1
 Pillow>=10.0.0
+pydantic>=2.0.0
+PySocks>=1.7.1
 requests==2.32.3
 faker==30.3.0
