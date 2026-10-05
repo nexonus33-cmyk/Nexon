@@ -328,7 +328,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()id, timeout=180)
+    main()
         if not code:
             result["reason"] = "no_sms"
             sms_cancel(order_id)
